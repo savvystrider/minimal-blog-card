@@ -8,4 +8,63 @@ body {
     display: grid;
     min-height: 100vh;
     place-items: center;
+    font-family: Sora, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+main {
+    max-width: 21rem;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #E6D6FC;
+    color: 883AE1;
+    border: none;
+    border-radius: 1em;
+    padding: 0.375em 1em;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 1.125rem;
+    margin-top: 1em;
+    margin-bottom: 0.375em;
+}
+
+h1 + p {
+    margin-top: 0.375em;
+    margin-bottom: 1.25em;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+
+h1 + p::after {
+    content: "";
+    width: 150%;
+    height: 3px;
+    position: absolute;
+    left: -2em;
+    right: 0;
+    bottom: -0.6em;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 0.875rem;
+    padding-top: 0.5em;
+    margin-bottom: 0;
 }
